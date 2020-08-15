@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
     @section('content')
-        <h1>Title</h1>
+        <h1>Services</h1>
         <ul class="list-group">
        
         </ul>
