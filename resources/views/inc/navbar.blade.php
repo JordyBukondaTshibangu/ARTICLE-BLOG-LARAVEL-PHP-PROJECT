@@ -7,15 +7,23 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/services">Services</a>
+                <a class="nav-link" href="/services">Services</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/about" tabindex="-1" aria-disabled="true">About</a>
+                <a class="nav-link" href="/posts">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about" tabindex="-1" aria-disabled="true">About</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"> 
+                <a class="nav-link" href="/posts/create"> Create Post </a>
             </li>
         </ul>
         </div>
     </div>
-</nav>
+</nav> <br>
