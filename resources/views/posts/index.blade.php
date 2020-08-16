@@ -9,7 +9,7 @@
                     <li class="list-group-item">
                         <div class="well">
                             <h3> {{ $post->title}} </h3>
-                            <small> written at {{ $post->created_at}} </small> <br>
+                            <small> written on {{ $post->created_at}} by {{ $post->user->name }}</small><br><hr>
                             <a href="/posts/{{$post->id}}">view post</a>
                         </div>
                     </li><br>
