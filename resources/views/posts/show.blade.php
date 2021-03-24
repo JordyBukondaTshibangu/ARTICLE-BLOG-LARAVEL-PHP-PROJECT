@@ -3,7 +3,9 @@
 @section('content')
     <a href="/posts" class="btn btn-info">Go back </a> <br> <br>
     <h3> {!! $post->title!!}</h3>
-    <img src="storage/cover_images/{{$post->cover_image}}" alt="img" style="width: 50%">
+    <br>
+    <img src="{{ asset('/storage/cover_images/'.$post->cover_image) }}" alt="/" style="width: 50%">
+    {{-- <img src="storage/cover_images/{{$post->cover_image}}" alt="img" > --}}
     <hr>
     <div> {!!$post->body!!} </div>
     <small> written on {{ $post->created_at}} by {{ $post->user->name }}</small>
