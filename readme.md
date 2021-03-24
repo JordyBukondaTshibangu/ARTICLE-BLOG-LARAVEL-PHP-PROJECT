@@ -35,8 +35,8 @@ Bellow are the links to help you installing it:
 
 ### Launch
 
-*  git clone git@github.com:JordyBukondaTshibangu/I-SHOOTPICTURE--LARAVEL-PHP-APP.git
-* cd I-SHOOTPICTURE--LARAVEL-PHP-APP
+*  git clone git@github.com:JordyBukondaTshibangu/ARTICLE-BLOG-LARAVEL-PHP-PROJECT.git
+* cd ARTICLE-BLOG-LARAVEL-PHP-PROJECT
 * npm install 
 * composer install
 * cp .env.example .env
