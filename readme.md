@@ -1,72 +1,130 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# ARTICLE-BLOG-LARAVEL-PHP-PROJECT
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+### Table of content 
 
-## About Laravel
+* General info
+* Technologies
+* Setup
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Introduction 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This is a simple Laravel app with a blade template engine
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Technologies
 
-## Learning Laravel
+* PHP
+* Laravel
+* Sqlite
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Perequisite
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Before launching this project you must ensure that have mysql, php, and composer
 
-## Laravel Sponsors
+Bellow are the links to help you installing it:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    —> www.wampserver.com › download-wampserver-64bits
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+    —>  https://www.mamp.info/en/downloads/
 
-## Contributing
+    —> https://windows.php.net/download/
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    —>  https://www.php.net/manual/en/install.macosx.php
 
-## Security Vulnerabilities
+    —> https://getcomposer.org/download/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+### Launch
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    *   git clone git@github.com:JordyBukondaTshibangu/ARTICLE-BLOG-LARAVEL-PHP-PROJECT.git
+    *   cd ARTICLE-BLOG-LARAVEL-PHP-PROJECT
+    *   npm install 
+    *   composer install
+    *   cp .env.example .env
+    *   php artisan key:generate
+    *   php artisan migrate:fresh
+    *   php artisan storage:link
+    *   php artisan serve 
+
+
+
+
+## APP STRUCTURE AND KEY POINTS
+
+
+- [x] API ==> Server
+	
+	composer create-project laravel/laravel ARTICLE-BLOG-LARAVEL-PHP-PROJECT		
+
+- [x] Database  => Database	
+	
+	set up the .env file 
+
+        DB_CONNECTION=mysql
+
+        DB_HOST=127.0.0.1
+
+        DB_PORT=3306
+
+        DB_DATABASE=LaravelArticleBlogProject
+
+        DB_USERNAME=root
+
+        DB_PASSWORD=root
+
+        DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock 
+        
+        
+
+
+- [x] API ==> Models
+
+	For the model we need to run the migration in order for them to reach the database
+
+	We have to instances : 
+
+        Post : we need to add the following fields in the migration file (Title, Body, image, user_id)
+
+        User : we need to add the following fields in the migration file (name, email, password)
+
+	To create the model run the following command : 
+
+        * php artisan make : model Post -m (It creates the Model and the migration)
+	
+	After creating the model and the migrations, you can run the migration : 
+
+        * php artisan migrate
+
+- [x] API ==> Model Relationships
+
+    Create a method in the Post model ( user ) ==> Post belongsTo User
+
+    Create a method in the User model ( posts ) ==> User hasMany Post
+
+	
+- [x] API ==> Controllers
+
+	It dictates the logic, the way data must be saved, retrieved, updated, and delete
+	to create controllers run the following command : 
+
+        * php artisan make : controller PostControl - - resource (it creates the controller and the resources including index, store, edit, update, delete)
+
+        * php artisan make : controller PageControl 
+
+
+- [x] API ==> Routes
+
+    The routes are : 
+
+        Route :: get(“/“, PageContrroller@index);
+
+        Route :: get(“/“, PageContrroller@about);
+
+        Route :: resource(“posts”, PostsController);
+
+
+
+- [x] MIDDLEWARE ==> Auth
+
+	To enable authentication in Laravel you can simply run the following command : 
+
+        * php artisan make:auth 
