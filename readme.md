@@ -35,15 +35,15 @@ Bellow are the links to help you installing it:
 
 ### Launch
 
-    *  git clone git@github.com:JordyBukondaTshibangu/ARTICLE-BLOG-LARAVEL-PHP-PROJECT.git
-    * cd ARTICLE-BLOG-LARAVEL-PHP-PROJECT
-    * npm install 
-    * composer install
-    * cp .env.example .env
-    * php artisan key:generate
-    * php artisan migrate:fresh
-    * php artisan storage:link
-    * php artisan serve 
+    *   git clone git@github.com:JordyBukondaTshibangu/ARTICLE-BLOG-LARAVEL-PHP-PROJECT.git
+    *   cd ARTICLE-BLOG-LARAVEL-PHP-PROJECT
+    *   npm install 
+    *   composer install
+    *   cp .env.example .env
+    *   php artisan key:generate
+    *   php artisan migrate:fresh
+    *   php artisan storage:link
+    *   php artisan serve 
 
 
 
