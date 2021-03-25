@@ -58,12 +58,19 @@ Bellow are the links to help you installing it:
 - [x] Database  => Database	
 	
 	set up the .env file 
+    
 	DB_CONNECTION=mysql
+    
 	DB_HOST=127.0.0.1
+    
 	DB_PORT=3306
+    
 	DB_DATABASE=LaravelArticleBlogProject
+    
 	DB_USERNAME=root
+    
 	DB_PASSWORD=root
+    
 	DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock 
 
 
@@ -72,7 +79,9 @@ Bellow are the links to help you installing it:
 	For the model we need to run the migration in order for them to reach the database
 
 	We have to instances : 
+    
 	Post : we need to add the following fields in the migration file (Title, Body, image, user_id)
+    
 	User : we need to add the following fields in the migration file (name, email, password)
 
 	To create the model run the following command : 
@@ -86,6 +95,7 @@ Bellow are the links to help you installing it:
 - [x] API ==> Model Relationships
 	
 	Create a method in the Post model ( user ) ==> Post belongsTo User
+    
 	Create a method in the User model ( posts ) ==> User hasMany Post
 
 	
@@ -95,6 +105,7 @@ Bellow are the links to help you installing it:
 	to create controllers run the following command : 
 
 	* php artisan make : controller PostControl - - resource (it creates the controller and the resources including index, store, edit, update, delete)
+	
 	* php artisan make : controller PageControl 
 
 
@@ -103,7 +114,9 @@ Bellow are the links to help you installing it:
 The routes are : 
 
 Route :: get(“/“, PageContrroller@index);
+
 Route :: get(“/“, PageContrroller@about);
+
 Route :: resource(“posts”, PostsController);
 
 
